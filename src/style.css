@@ -1,0 +1,47 @@
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+img {
+  width: 70vw;
+  border-radius: 10px;
+}
+
+.faLeft {
+  position: absolute;
+  top: auto;
+  left: 2px;
+  font-size: 4rem;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+  user-select: none;
+}
+
+.faRight {
+  position: absolute;
+  top: auto;
+  right: 2px;
+  font-size: 4rem;
+  cursor: pointer;
+  opacity: 0.5;
+  z-index: 1;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.activ {
+  opacity: 1;
+  transition-duration: 1.5s;
+  transform: scale(1.08);
+}
